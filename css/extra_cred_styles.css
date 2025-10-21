@@ -20,13 +20,12 @@ html, body {
     padding: 0;
 }
 
-/* Simple centered, inline, sticky top navigation for HW8 */
 .top-nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background:#d4f1ee; /* light blue from palette */
+    background:#d4f1ee;
     padding: 8px 0px;
     text-align: center;
     margin: 0;
@@ -38,13 +37,12 @@ html, body {
 body {
     font-family: 'Inter', Arial, sans-serif;
     background: #d4f1ee;
-    padding-top: 40px; /* space for fixed nav */
+    padding-top: 40px;
     color: #0F1724;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-    /* padding: 1rem 1rem 3rem 1rem; */
 }
 
 /* Headings */
@@ -88,17 +86,12 @@ header, main, footer { display: block; }
 /* Header & Footer 
 ------------------------------------*/
 header {
-    background: #F8FAFC; /* very light grey */
+    background: #F8FAFC;
     padding: 1rem;
-    /* margin-top: 1rem; */
-    /* box-shadow: 0 2px 6px rgba(15,23,36,0.06); */
     display: flex;
     gap: 1rem;
     align-items: center;
-    /* border-radius: 6px; */
 }
-
-
 
 header .intro { flex: 1 1 auto; }
 
@@ -153,14 +146,11 @@ footer {
 /* Work Experience
 ------------------------------------*/
 main section {
-    background: #F1F5F9; /* subtle light grey-blue so sections contrast with page white */
+    background: #F1F5F9;
     padding: 1rem;
-    /* margin-top: 1rem; */
-    /* box-shadow: 0 1px 4px rgba(15,23,36,0.03); */
-    /* border-radius: 6px; */
 }
 
-/* Neon city background for the Education section (fixed attachment) */
+/*  city background for the Education section (fixed attachment) */
 #education {
     background-image: linear-gradient(rgb(206, 229, 255), rgba(250, 250, 250, 0.205)), url('../images/pexels-pixabay-302769.jpg');
     background-size: cover;
@@ -169,7 +159,7 @@ main section {
     background-attachment: fixed;
 }
 
-/* Neon background for projects section */
+/* Neon city background for projects section */
 #projects {
     background-image: linear-gradient(rgb(206, 229, 255), rgba(250, 250, 250, 0.205)), url('../images/neon_city.jpg');
     background-size: cover;
