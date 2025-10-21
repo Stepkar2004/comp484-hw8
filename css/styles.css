@@ -1,0 +1,181 @@
+/* Color Palette
+#0F1724 - dark blue (primary)
+#3B82F6 - light blue (accent)
+#585858 - dark grey (muted/text secondary)
+#d4f1ee - bluish grey (page background)
+*/
+
+/* Box model fix */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Global styles 
+------------------------------------*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Simple centered, inline, sticky top navigation for HW8 */
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:#d4f1ee; /* light blue from palette */
+    padding: 8px 0px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+.top-nav a { color: #0F1724; text-decoration: none; margin: 0 8px; display: inline-block; }
+.top-nav a:hover { text-decoration: underline; }
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #d4f1ee;
+    padding-top: 40px; /* space for fixed nav */
+    color: #0F1724;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    /* padding: 1rem 1rem 3rem 1rem; */
+}
+
+/* Headings */
+h1, h2, h3 {
+    margin: 0 0 .4rem 0;
+}
+
+
+h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.1rem;
+    color: #0F1724;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    color: #3B82F6;
+    font-weight: 400;
+}
+
+/* Remove top margin for h2 as instructed */
+h2 { margin-top: 0; }
+
+
+h3 {
+    font-size: 1rem;
+    color: #0B3C5D;
+}
+
+p {
+    margin: 0 0 .75rem 0;
+}
+
+a { color: #0B3C5D; }
+
+/* Layout */
+header, main, footer { display: block; }
+
+/* Header & Footer 
+------------------------------------*/
+header {
+    background: #F8FAFC; /* very light grey */
+    padding: 1rem;
+    /* margin-top: 1rem; */
+    /* box-shadow: 0 2px 6px rgba(15,23,36,0.06); */
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    /* border-radius: 6px; */
+}
+
+
+
+header .intro { flex: 1 1 auto; }
+
+header .intro h1 { margin-bottom: .15rem; }
+header .intro h2 { margin-bottom: .5rem; }
+
+/* remove margins on header h1/h2 */
+header h1, header h2 { margin: 0; }
+
+footer {
+    background: #162338;
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact-info a { color: #FFFFFF; margin: 0 .5rem; text-decoration: none; padding: 10px; display: inline-block; }
+.contact-info a:hover { text-decoration: underline; }
+
+/* small spacing for icons in contact links */
+.contact-info a i { margin-right: 6px; }
+
+/* Reusable content wrapper used across header/sections/footer */
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+/* Float and size the profile image in the header as instructed */
+.profile-img {
+    height: auto;
+    border-radius: 50%;
+    max-width:100%;
+}
+
+/* Column helpers for narrow and wide content per HW7 Task 6 */
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+/* Work Experience
+------------------------------------*/
+main section {
+    background: #F1F5F9; /* subtle light grey-blue so sections contrast with page white */
+    padding: 1rem;
+    /* margin-top: 1rem; */
+    /* box-shadow: 0 1px 4px rgba(15,23,36,0.03); */
+    /* border-radius: 6px; */
+}
+
+/* Neon city background for the Education section (fixed attachment) */
+#education {
+    background-image: linear-gradient(rgb(206, 229, 255), rgba(250, 250, 250, 0.205)), url('../images/pexels-pixabay-302769.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.job { margin-bottom: 1rem; }
+.job p.company { font-weight: 600; color: #3B82F6; margin-bottom: .25rem; }
+.job p.dates { font-style: italic; color: #585858; margin-bottom: .5rem; }
+
+/* Education
+------------------------------------*/
+.education-item { margin-bottom: .75rem; }
+
+.muted { color: #585858; font-size: .95rem; }
